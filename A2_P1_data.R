@@ -6,8 +6,10 @@ expeditions %>%
   mutate(new_peak_name = fct_lump(peak_name, n = 15)) %>%
   drop_na(new_peak_name) %>%
   filter(new_peak_name != "Other") %>%
-  ggplot(aes(y = new_peak_name)) +
+  ggplot(aes(x = fct_rev(fct_infreq(new_peak_name)), color = season)) +
+  coord_flip() +
   geom_bar()
 
-#I need to reorder!
+
+
   
