@@ -7,4 +7,6 @@ aggdata1 %>%
   scale_x_continuous(breaks = pretty_breaks(n = 5)) +
   labs(title = "Number of awarded Ph.D.-s in the US by year",
        x = element_blank(),
-       y = element_blank())
+       y = element_blank()) +
+  scale_colour_discrete("Broad field")
+       
