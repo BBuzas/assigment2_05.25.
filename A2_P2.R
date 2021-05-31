@@ -9,4 +9,5 @@ aggdata1 %>%
        x = element_blank(),
        y = element_blank()) +
   scale_colour_discrete("Broad field")
+  
        
